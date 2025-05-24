@@ -10,6 +10,12 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'gizli_anahtar'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///kullanicilar.db'
 
+
+@app.route('/')
+def home():
+    return redirect(url_for('login'))
+
+
 # Ana uploads klasörü
 UPLOAD_FOLDER = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'uploads')
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
