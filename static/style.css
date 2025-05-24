@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 20px;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Butonlar için genel stil */
+button,
+.btn {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 30px; /* Oval kenar */
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white !important;
+    display: inline-block;
+}
+
+.hosgeldin-yazi {
+    color: #4682b4; /* Mor bir ton */
+    font-weight: bold;
+}
+
+
+
+
+.yukleme-panel {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.yukleme-baslik {
+    background-color: #4682B4; /* Turuncu başlık */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 4px 4px 0 0;
+}
+
+
+
+
+
+/* Farklı buton tipleri için renkler */
+.btn-primary {
+    background-color: #4682B4;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9 !important;
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background-color: #27ae60;
+}
+
+.btn-success:hover {
+    background-color: #2E8B57 !important;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #DC143C;
+    box-shadow: 0 4px 6px rgba(231, 76, 60, 0.3);
+}
+
+.btn-danger:hover {
+    background-color: #c0392b !important;
+    transform: scale(1.05);
+}
+
+/* Çıkış yap butonu için özel sınıf (a etiketi için) */
+a.btn-logout {
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(231, 76, 60, 0.3);
+    display: inline-block;
+    text-decoration: none;
+    color: white !important;
+    background-color: #DC143C;
+}
+
+a.btn-logout:hover {
+    background-color: #c0392b !important;
+    transform: scale(1.05);
+}
+
+/* Liste elemanları */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+a {
+    color: #4682B4;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flash mesajları için renk kodlama */
+ul li {
+    margin-bottom: 5px;
+}
+
+.flash-success {
+    color: green;
+}
+
+.flash-error {
+    color: red;
+}

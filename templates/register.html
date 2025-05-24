@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Kayıt Ol{% endblock %}
+
+{% block content %}
+<h2 class="text-center mb-4">Kayıt Ol</h2>
+
+<form method="POST" action="{{ url_for('register') }}" class="w-50 mx-auto">
+    <div class="mb-3">
+        <label for="kullanici_adi" class="form-label">Kullanıcı Adı</label>
+        <input type="text" class="form-control" id="kullanici_adi" name="kullanici_adi" required>
+        <small class="form-text text-muted">Kullanıcı adı en az 8 karakter olmalıdır.</small>
+    </div>
+    <div class="mb-3">
+        <label for="sifre" class="form-label">Şifre</label>
+        <input type="password" class="form-control" id="sifre" name="sifre" required>
+        <small class="form-text text-muted">Şifre en az 1 büyük harf ve 1 rakam içermelidir.</small>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Kayıt Ol</button>
+</form>
+
+<div class="text-center mt-3">
+    <p>Zaten bir hesabınız var mı? <a href="{{ url_for('login') }}">Giriş Yap</a></p>
+</div>
+{% endblock %}
